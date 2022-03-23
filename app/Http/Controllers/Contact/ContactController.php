@@ -37,6 +37,10 @@ class ContactController extends ApiController
             }
         } else {
             $contacts = Contact::all();
+
+            if ($contacts->isEmpty()) {
+                return response()->json(['message' => 'No entries!'], Response::HTTP_OK);
+            }
         }
 
         return $this->showAll($contacts, Response::HTTP_OK);
