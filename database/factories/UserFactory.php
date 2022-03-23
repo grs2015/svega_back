@@ -29,7 +29,8 @@ class UserFactory extends Factory
         return $this->state(function(array $attrs) {
             return [
                 'role' => User::ADMIN_USER,
-                'email_verified_at' => now()
+                'email_verified_at' => now(),
+                'email' => 'osatterfield@example.org'
             ];
         });
     }
