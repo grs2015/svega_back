@@ -23,7 +23,7 @@ class MainSeeder extends Seeder
         Main::factory()
             ->has(Benefit::factory()->count(5))
             ->has(Offer::factory()->count(5))
-            ->has(Section::factory()->count(4))
+            ->has(Section::factory()->count(5))
             ->has(Blog::factory()->count(25))
             ->has(Activity::factory()->count(10))
             ->create();
