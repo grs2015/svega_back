@@ -16,6 +16,7 @@ class BlogFactory extends Factory
         return [
             'title' => $this->faker->word(),
             'description' => $this->faker->text(),
+            'description_full' => $this->faker->text(),
             'images' => $this->faker->imageUrl(),
         ];
     }
